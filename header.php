@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" id="theHTML">
 	<head>
   	<meta charset="UTF-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
@@ -46,7 +46,7 @@
                 height: 100%;
                 pointer-events: none;
                 z-index: 0;
-                transition: opacity .3s linear;
+				transition: opacity .3s linear;
             }
   
            #header-content-holder {
@@ -89,7 +89,7 @@
 		</style>
 	
 	</head>
-	<body <?php body_class();?> >
+	<body <?php body_class();?> id="theBody">
 		
 		<header id="header">
           <div id="header-background-screen"></div>

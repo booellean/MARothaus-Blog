@@ -75,7 +75,7 @@ function headerBehavior() {
         headerBorder.style.borderRadius = '50em';
 		header.style.top = '0.5em';
 		headerBorder.style.top = '0.5em';
-		headerBorder.style.right = '0';
+		headerBorder.style.right = '1.5em';
 		
 		avatar.style.opacity = '0';
 		navbar.style.opacity = '0';
@@ -84,7 +84,7 @@ function headerBehavior() {
 		
 		header.style.top = '0';
 		headerBorder.style.top = '0';
-		headerBorder.style.right = '-.3em';
+		headerBorder.style.right = '1.5em';
 		
         header.style.width = '15em';
         header.style.height = '100%';
@@ -137,7 +137,7 @@ function menuFunctions() {
         headerBorder.style.borderRadius = '0em';
 		header.style.top = '0';
 		headerBorder.style.top = '0';
-		headerBorder.style.right = '-.3em';
+		headerBorder.style.right = '1.5em';
 		
 		menuButton.style.top = '.3em';
 		menuButton.style.right = '.3em';
@@ -162,7 +162,7 @@ function menuFunctions() {
         headerBorder.style.borderRadius = '50em';
 		header.style.top = '0.5em';
 		headerBorder.style.top = '0.5em';
-		headerBorder.style.right = '0';
+		headerBorder.style.right = '1.5em';
 		
 		menuButton.style.top = '2.6em';
 		menuButton.style.right = '2.3em';

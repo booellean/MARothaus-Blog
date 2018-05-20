@@ -22,6 +22,7 @@
 			}
 			
 			#header {
+				overflow: hidden;
 				background-size: cover;
 				-o-background-size: cover;
 				-moz-background-size: cover;
@@ -34,8 +35,6 @@
 			}
           
             #header-background-screen {
-                position: fixed;
-                top: 0;
                 background-color: #159632;
                 background-color: rgba(0, 168, 38, .75);
 		        background-blend-mode: color-burn;
@@ -52,7 +51,7 @@
            #header-content-holder {
                 position: fixed;
                 top: 0;
-                right: 0em;
+                right: 1em;
                 z-index: 50;
             }
           
@@ -70,7 +69,7 @@
 				content: '';
 				position: fixed;
 				top: -10em;
-				right: -6em;
+				right: 1em;
 				width: 100%;
 				height: 100em;
 				background: -webkit-linear-gradient(left, transparent 20%, rgba(21, 150, 50, 1));

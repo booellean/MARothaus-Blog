@@ -6,6 +6,8 @@
 
 html, body {
 	width: 100%;
+	height: 100vh;
+	min-height: 100%;
 	overflow-x: hidden;
 }
 
@@ -15,10 +17,13 @@ html, body {
 	overflow-x: hidden;
 	width: 100%;
 	height: 100%;
-	min-height: 100vh;
+	min-height: 95vh;
+	display: -ms-flexbox;
+	display: -webkit-flex;
 	display: flex;
 	flex-flow: column nowrap;
 	justify-content: space-between;
+	flex: 0 0 auto;
 	transition: padding-right .3s linear;
 	padding-right: 14em; /*CHANGE TO 0 WHEN SWITCHING MEDIA QUERIES*/
 }
@@ -34,7 +39,7 @@ body::-webkit-scrollbar {
 
 #main {
 	width: 100%;
-	display: block;
+	flex-shrink: 0;
 }
 
 @media screen and (max-width: 40em){
@@ -1124,12 +1129,10 @@ button#submitForm {
 footer {
 	width: 100%;
 	height: 3em;
-	bottom: 0;
-	left: 0;
 	padding: 2em 0;
 	padding-right: 2em;
 	transition: padding-right .3s linear;
-	display: inline-flex;
+	display: flex;
 	justify-content: space-between;
 	align-items: center;
 }

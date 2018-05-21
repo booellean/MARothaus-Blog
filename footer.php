@@ -1,11 +1,11 @@
-		</div>
+		</div> <!-- MAIN div -->
 
 		<footer>
 				<div id="copyrightHolder">&copy;&nbsp;</div>
 				<div class="postArrows"><?php posts_nav_link(' ', '<i class="fa fa-chevron-circle-left" aria-hidden="true"></i>', '<i class="fa fa-chevron-circle-right" aria-hidden="true"></i>'); ?></div>
-			</footer>
+		</footer>
 
-		</div>
+		</div><!-- WRAPPER div -->
 
 		<?php wp_footer(); ?>
 		<div id="svg-holder">

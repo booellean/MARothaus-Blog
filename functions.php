@@ -4,7 +4,8 @@
 //function to call scripts/css
 
 function MARothaus_scripts_enqueue() {
-	
+    
+    wp_enqueue_style('customprint', get_template_directory_uri() .'/css/normalize.css', array(), '1.0.0', 'all');
 	wp_enqueue_style('customstyle', get_template_directory_uri() .'/css/style.css', array(), '1.0.0', 'all');
 	wp_enqueue_style('customprint', get_template_directory_uri() .'/css/print.css', array(), '1.0.0', 'all');
 	wp_enqueue_script('customscript', get_template_directory_uri() .'/js/script.js', array(), '1.0.0', true);

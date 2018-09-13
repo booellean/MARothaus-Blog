@@ -105,7 +105,7 @@ body::-webkit-scrollbar {
 	background-color: #003d84;
 	position: fixed;
 	top: 0;
-	right: 1.5em;
+	right: 1.8em;
 	width: 15em;
     border-radius: 0em;
 	height: 100%;
@@ -114,7 +114,7 @@ body::-webkit-scrollbar {
 	-moz-clip-path: url(#clip-box);
 	clip-path: url(#clip-box);
 	shape-outside: url(#clip-box);
-	transform: scale(1.05);
+	transform: scale(1.1);
     transition: all .3s linear;
 	transition: right .2s linear;
 	transition: opacity .3s linear;
@@ -146,7 +146,7 @@ body::-webkit-scrollbar {
 	#header-border {
 		position: fixed;
 		top: 0.5em;
-		right: 1.5em;
+		right: 1em;
         width: 7em;
         height: 7em;
         border-radius: 50em;
@@ -156,6 +156,7 @@ body::-webkit-scrollbar {
 		-moz-clip-path: url(#clip-leaf);
 		clip-path: url(#clip-leaf);
 		shape-outside: circle(5em at 0 10em);
+		transform: scale(1.2);
 	}
 
 	#header.changeToBox, #header-border.changeToBox{opacity: 1;}

@@ -73,7 +73,12 @@ function headerBehavior() {
         headerBorder.style.borderRadius = '50em';
 		header.style.top = '0.5em';
 		headerBorder.style.top = '0.5em';
-		headerBorder.style.right = '1.5em';
+		headerBorder.style.right = '1em';
+		headerBorder.style.webkitTransform = 'scale(1.2)';
+		headerBorder.style.MozTransform = 'scale(1.2)';
+		headerBorder.style.msTransform = 'scale(1.2)';
+		headerBorder.style.OTransform = 'scale(1.2)';
+		headerBorder.style.transform = 'scale(1.2)';
 
 		avatar.style.opacity = '0';
 		navbar.style.opacity = '0';
@@ -82,7 +87,7 @@ function headerBehavior() {
 
 		header.style.top = '0';
 		headerBorder.style.top = '0';
-		headerBorder.style.right = '1.5em';
+		headerBorder.style.right = '1.8em';
 
         header.style.width = '15em';
         header.style.height = '100%';
@@ -94,6 +99,11 @@ function headerBehavior() {
 		headerBorder.className = 'changeToBox';
 		header.style.clipPath = 'url(#clip-box)';
 		headerBorder.style.clipPath = 'url(#clip-box)';
+		headerBorder.style.webkitTransform = 'scale(1.1)';
+		headerBorder.style.MozTransform = 'scale(1.1)';
+		headerBorder.style.msTransform = 'scale(1.1)';
+		headerBorder.style.OTransform = 'scale(1.1)';
+		headerBorder.style.transform = 'scale(1.1)';
 
 		avatar.style.opacity = '1';
 		navbar.style.opacity = '1';
@@ -132,7 +142,12 @@ function menuFunctions() {
         headerBorder.style.borderRadius = '0em';
 		header.style.top = '0';
 		headerBorder.style.top = '0';
-		headerBorder.style.right = '1.5em';
+		headerBorder.style.right = '1.8em';
+		headerBorder.style.webkitTransform = 'scale(1.1)';
+		headerBorder.style.MozTransform = 'scale(1.1)';
+		headerBorder.style.msTransform = 'scale(1.1)';
+		headerBorder.style.OTransform = 'scale(1.1)';
+		headerBorder.style.transform = 'scale(1.1)';
 
 		menuButton.style.top = '1em';
 		menuButton.style.right = '1em';
@@ -156,7 +171,12 @@ function menuFunctions() {
         headerBorder.style.borderRadius = '50em';
 		header.style.top = '0.5em';
 		headerBorder.style.top = '0.5em';
-		headerBorder.style.right = '1.5em';
+		headerBorder.style.right = '1em';
+		headerBorder.style.webkitTransform = 'scale(1.2)';
+		headerBorder.style.MozTransform = 'scale(1.2)';
+		headerBorder.style.msTransform = 'scale(1.2)';
+		headerBorder.style.OTransform = 'scale(1.2)';
+		headerBorder.style.transform = 'scale(1.2)';
 
 		menuButton.style.top = '2.6em';
 		menuButton.style.right = '3.3em';

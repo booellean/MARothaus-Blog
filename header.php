@@ -118,4 +118,4 @@
 		<div id="background-screen"></div>
 		<div id="header-border"></div>
 		<div id="wrapper">
-			<div id="main">
+			<main id="main">

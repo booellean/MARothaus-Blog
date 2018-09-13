@@ -218,7 +218,7 @@ body::-webkit-scrollbar {
 #menu-button {
 	display: none;
 	position: fixed;
-	right: 2.3em;
+	right: 3.3em;
 	top: 2.6em;
 	height: 2.4em;
 	width: 2.5em;
@@ -229,6 +229,7 @@ body::-webkit-scrollbar {
 }
 
 #menu-button>div {
+	position: absolute;
 	top: 0;
 	left: 0;
 	display: block;
@@ -253,7 +254,7 @@ body::-webkit-scrollbar {
 	-moz-transition: transform linear .1s;
 	transition: top ease-in-out .1s .1s;
 	transition: transform linear .1s;
-	top: .2em;
+	top: 0px;
 }
 
 #menu-button>div:nth-child(2) {
@@ -261,7 +262,7 @@ body::-webkit-scrollbar {
 	-o-transition: all linear .01s .09s;
 	-moz-transition: all linear .01s .09s;
 	transition: all linear .01s .09s;
-	top: .9em;
+	top: 12px;
 	left: 0;
 	width: 100%;
 }
@@ -279,7 +280,7 @@ body::-webkit-scrollbar {
 	-moz-transition: transform linear .1s;
 	transition: top ease-in-out .1s .1s;
 	transition: transform linear .1s;
-	top: 1.6em;
+	top: 24px;
 }
 
 #menu-button.open>div:nth-child(1) {
@@ -295,7 +296,7 @@ body::-webkit-scrollbar {
 	-moz-transition: transform linear .1s .1s;
 	transition: all ease-in-out .1s;
 	transition: transform linear .1s .1s;
-	top: .9em;
+	top: 12px;
 }
 
 #menu-button.open>div:nth-child(2) {
@@ -324,7 +325,7 @@ body::-webkit-scrollbar {
 	-moz-transition: transform linear .1s .1s;
 	transition: all ease-in-out .1s;
 	transition: transform linear .1s .1s;
-	top: .9em;
+	top: 12px;
 }
 
 /*==================================*/

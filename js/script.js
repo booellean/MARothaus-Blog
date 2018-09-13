@@ -39,14 +39,14 @@ function ieBrowserSupport(){
 
 function preventHeaderBehaviors() {
 	var header = document.getElementById('header');
-	
+
 	if(window.innerWidth <= 640){
 		header.className = 'small';
-		
-	}else if(window.innerWidth > 640){		
+
+	}else if(window.innerWidth > 640){
 		header.className='large';
 	}
-	
+
 }
 
 //==================================//
@@ -55,18 +55,16 @@ function preventHeaderBehaviors() {
 function headerBehavior() {
 	var menuButton = document.getElementById('menu-button');
 	var header = document.getElementById('header');
-    var headerColor = document.getElementById('header-background-screen');
 	var headerBorder= document.getElementById('header-border');
 	var avatar = document.getElementById('avatar');
 	var navbar = document.getElementById('navbar');
-	
+
 	if((window.innerWidth <= 640 && header.className==='large') || (window.innerWidth <= 640 && header.className==='changeToBox') || (window.innerWidth <= 640 && header.className === 'changeToLeaf close')){
 		header.className = 'changeToLeaf';
-        headerColor.className = 'changeToLeaf';
 		headerBorder.className = 'changeToLeaf';
 		header.style.clipPath = 'url(#clip-leaf)';
 		headerBorder.style.clipPath = 'url(#clip-leaf)';
-		
+
         header.style.width = '7em';
         header.style.height = '7em';
         header.style.borderRadius = '50em';
@@ -76,16 +74,16 @@ function headerBehavior() {
 		header.style.top = '0.5em';
 		headerBorder.style.top = '0.5em';
 		headerBorder.style.right = '1.5em';
-		
+
 		avatar.style.opacity = '0';
 		navbar.style.opacity = '0';
-		
+
 	}else if ((window.innerWidth > 640 && header.className==='small') || (window.innerWidth > 640 && header.className==='changeToLeaf') || (window.innerWidth > 640 && header.className === 'changeToBox open')){
-		
+
 		header.style.top = '0';
 		headerBorder.style.top = '0';
 		headerBorder.style.right = '1.5em';
-		
+
         header.style.width = '15em';
         header.style.height = '100%';
         header.style.borderRadius = '0em';
@@ -93,19 +91,18 @@ function headerBehavior() {
         headerBorder.style.height = '100%';
         headerBorder.style.borderRadius = '0em';
 		header.className = 'changeToBox';
-        headerColor.className= 'changeToBox';
 		headerBorder.className = 'changeToBox';
 		header.style.clipPath = 'url(#clip-box)';
 		headerBorder.style.clipPath = 'url(#clip-box)';
-		
+
 		avatar.style.opacity = '1';
 		navbar.style.opacity = '1';
-		
+
 		menuButton.style.top = '2.6em';
-		menuButton.style.right = '2.3em';
+		menuButton.style.right = '3.3em';
 		menuButton.className = '';
 	}
-	
+
 	if(window.innerWidth >640){
 		clickEven = false;
 	}
@@ -117,18 +114,16 @@ function headerBehavior() {
 function menuFunctions() {
 	var menuButton = document.getElementById('menu-button');
 	var header = document.getElementById('header');
-	var headerBorder= document.getElementById('header-border');	
-    var headerColor = document.getElementById('header-background-screen');
+	var headerBorder= document.getElementById('header-border');
 	var avatar = document.getElementById('avatar');
 	var navbar = document.getElementById('navbar');
 
 	if (clickEven === false) {
 		header.className = 'changeToBox open';
-        headerColor.className = 'changeToBox open';
 		headerBorder.className = 'changeToBox open';
 		header.style.clipPath = 'url(#clip-box)';
 		headerBorder.style.clipPath = 'url(#clip-box)';
-		
+
         header.style.width = '15em';
         header.style.height = '100%';
         header.style.borderRadius = '0em';
@@ -138,22 +133,21 @@ function menuFunctions() {
 		header.style.top = '0';
 		headerBorder.style.top = '0';
 		headerBorder.style.right = '1.5em';
-		
-		menuButton.style.top = '.3em';
-		menuButton.style.right = '.3em';
+
+		menuButton.style.top = '1em';
+		menuButton.style.right = '1em';
 		menuButton.className = 'open';
-		
+
 		avatar.style.opacity = '1';
 		navbar.style.opacity = '1';
-		
+
 		clickEven = true;
   }else if (clickEven === true){
 		header.className = 'changeToLeaf close';
-        headerColor.className = 'changeToLeaf close';
 		headerBorder.className = 'changeToLeaf close';
 		header.style.clipPath = 'url(#clip-leaf)';
 		headerBorder.style.clipPath = 'url(#clip-leaf)';
-		
+
         header.style.width = '7em';
         header.style.height = '7em';
         header.style.borderRadius = '50em';
@@ -163,14 +157,14 @@ function menuFunctions() {
 		header.style.top = '0.5em';
 		headerBorder.style.top = '0.5em';
 		headerBorder.style.right = '1.5em';
-		
+
 		menuButton.style.top = '2.6em';
-		menuButton.style.right = '2.3em';
+		menuButton.style.right = '3.3em';
 		menuButton.className = '';
-		
+
 		avatar.style.opacity = '0';
 		navbar.style.opacity = '0';
-		
+
 		clickEven = false;
   }
 }
@@ -178,11 +172,11 @@ function menuFunctions() {
 //==================================//
 //function defines height of .divCollapse and 'expands' it
 
-function openPostCollapse(event) {	
+function openPostCollapse(event) {
 	var number = this.id
 	var postNumber = 'post_' + number;
 	var contentNumber = 'content_' + number;
-	
+
 	var postCollapse = document.getElementById(postNumber);
 	var content = document.getElementById(contentNumber);
 
@@ -205,7 +199,7 @@ function openPostCollapse(event) {
 function floatyLeafStyle() {
 	var floatyLeaf = document.getElementById('floaty-leaf');
 	var navBarHeight = document.getElementById('navbar').clientHeight;
-	
+
 	floatyLeaf.style.height = navBarHeight + 'px';
 }
 
@@ -223,7 +217,7 @@ function generateFallingLeaves() {
 	var floatyLeaf=document.getElementById('floaty-leaf');
 	var navBar=document.getElementById('navbar');
 	var avatarHeight = document.getElementById('avatar').clientHeight;
-	
+
 	var i = Math.floor(Math.random()*colors.length);
 	var j = Math.floor(Math.random()*leaves.length);
 		var newDiv = document.createElement('div');
@@ -240,11 +234,11 @@ function generateFallingLeaves() {
 
 function generateFooterCopyright(){
 	var copyrightHolder = document.getElementById('copyrightHolder');
-	
+
 	var companyLink = document.createElement('a');
 	companyLink.setAttribute('href',"http://polyentertainment.com/");
 	companyLink.innerHTML = copyrightName;
-	
+
 	copyrightHolder.appendChild(companyLink);
 }
 

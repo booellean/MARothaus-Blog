@@ -52,7 +52,8 @@
                 position: fixed;
                 top: 0;
                 right: 1em;
-                z-index: 50;
+								z-index: 50;
+								overflow: hidden;
             }
 
 			#background-screen {

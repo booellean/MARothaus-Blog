@@ -7,7 +7,7 @@
 		<script src="https://use.fontawesome.com/75360aa574.js"></script>
 
   	<title>Matt Rothaus - Scientist</title>
-		
+
 		<style>
 
 			html{
@@ -20,7 +20,7 @@
 				background-attachment: fixed;
 				background-image: url('http://www.mr-ecology.com/wp-content/uploads/2017/09/background.jpg');
 			}
-			
+
 			#header {
 				overflow: hidden;
 				background-size: cover;
@@ -33,7 +33,7 @@
 				background-image: url('http://www.mr-ecology.com/wp-content/uploads/2017/09/background.jpg');
 				transition: all .3s linear;
 			}
-          
+
             #header-background-screen {
                 background-color: #159632;
                 background-color: rgba(0, 168, 38, .75);
@@ -41,20 +41,20 @@
 				background-position: 100% 0%;
 				background-repeat: no-repeat;
 				background-attachment: fixed;
-                width: 100%;  
+                width: 100%;
                 height: 100%;
                 pointer-events: none;
                 z-index: 0;
 				transition: opacity .3s linear;
             }
-  
+
            #header-content-holder {
                 position: fixed;
                 top: 0;
                 right: 1em;
                 z-index: 50;
             }
-          
+
 			#background-screen {
 				position: fixed;
 				width: 100vw;
@@ -69,12 +69,12 @@
 				content: '';
 				position: fixed;
 				top: -10em;
-				right: 1em;
+				right: -2em;
 				width: 100%;
 				height: 100em;
 				background: -webkit-linear-gradient(left, transparent 20%, rgba(21, 150, 50, 1));
-				background: -o-linear-gradient(left, transparent 20%, rgba(21, 150, 50, 1)); 
-				background: -moz-linear-gradient(left, transparent 20%, rgba(21, 150, 50, 1)); 
+				background: -o-linear-gradient(left, transparent 20%, rgba(21, 150, 50, 1));
+				background: -moz-linear-gradient(left, transparent 20%, rgba(21, 150, 50, 1));
 				background: linear-gradient(to right, transparent 20%, rgba(21, 150, 50, 1));
 				pointer-events: none;
 				opacity: 1;
@@ -86,10 +86,10 @@
 			}
 
 		</style>
-	
+
 	</head>
 	<body <?php body_class();?> id="theBody">
-		
+
 		<header id="header">
           <div id="header-background-screen"></div>
           <div id="header-content-holder">
@@ -105,7 +105,7 @@
 				<?php
 				$f_name = get_the_author_meta('first_name');
 				$l_name = get_the_author_meta('last_name');
-				
+
 				echo $f_name . ' ' . $l_name;
 				?>
 			</h1>
